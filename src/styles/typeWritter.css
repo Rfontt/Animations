@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.TypeWritter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../../assets/typeWritter-background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.TypeWritter-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.TypeWritter-header .title {
+    color: white;
+}
+
+.TypeWritter-header .pipe {
+    animation: 1s pipe infinite;
+    padding-left: 2px;
+    color: white;
+}
+
+@keyframes pipe {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 0; }
+}
